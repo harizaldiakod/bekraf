@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context="com.inrelt.harizal.berbagi.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="20dp"
+        android:text="Berapa belanja anda hari ini ?"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:id="@+id/textView"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/editText"
+        android:ems="10"
+        android:layout_below="@+id/textView"
+        android:hint="contoh:500.000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:text="tanpa Rp. dan koma, angka saja"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/textViewA" />
+
+    <Button
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Berbagi"
+        android:id="@+id/button"
+        android:layout_above="@+id/textView2"
+        android:shadowColor="@color/background_floating_material_light"
+        android:typeface="sans"
+        android:textColor="@android:color/primary_text_light_nodisable"
+        android:background="#16f5dcc3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Anda dapat menyisihkan ="
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/editText2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/editText2"
+        android:ems="10"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginBottom="55dp"
+        android:editable="false" />
+</LinearLayout>
